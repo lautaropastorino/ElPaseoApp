@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/noticia_title"
+        android:textSize="30sp">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/noticia_title"
+        android:id="@+id/noticia_subtitle"
+        android:textSize="20sp">
+
+    </TextView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/noticia_subtitle"
+        android:id="@+id/noticia_image">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/noticia_image"
+        android:id="@+id/noticia_text"
+        android:textSize="15sp">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/noticia_url"
+        android:layout_below="@id/noticia_text"
+        android:layout_marginBottom="10dp"
+        android:textSize="15sp"
+        android:textColor="@android:color/holo_blue_light">
+
+    </TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/noticia_url"
+        android:background="@android:color/darker_gray"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>

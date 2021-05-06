@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:text="Registro"
+            android:textSize="40sp"
+            android:id="@+id/registro_titulo">
+
+        </TextView>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:inputType="textCapWords"
+            android:ems="15"
+            android:id="@+id/registro_name"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/registro_titulo"
+            android:hint="Nombre*" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:inputType="textCapWords"
+            android:ems="15"
+            android:id="@+id/registro_last_name"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/registro_name"
+            android:hint="Apellido*" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha de nacimiento*"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:ems="15"
+            android:id="@+id/registro_birthday_titulo"
+            android:layout_below="@+id/registro_last_name"
+            android:layout_alignLeft="@+id/registro_last_name">
+        </TextView>
+
+
+        <com.example.elpaseoapp.CustomDatePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/registro_birthday"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/registro_birthday_titulo"
+            android:scaleY="0.9"
+            android:scaleX="0.9">
+        </com.example.elpaseoapp.CustomDatePicker>
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:inputType="textEmailAddress"
+            android:ems="15"
+            android:id="@+id/registro_email"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/registro_birthday"
+            android:hint="Correo Electrónico*" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:inputType="phone"
+            android:ems="15"
+            android:id="@+id/registro_phone"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/registro_email"
+            android:hint="Número de Teléfono*">
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/registro_phone"
+            android:text="Dirección de entrega"
+            android:textSize="20sp"
+            android:id="@+id/direccion_titulo">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/direccion_titulo"
+            android:layout_alignLeft="@+id/registro_phone"
+            android:id="@+id/linear_address">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/registro_street"
+                android:layout_centerHorizontal="true"
+                android:hint="Calle*">
+            </EditText>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:inputType="number"
+                android:ems="5"
+                android:id="@+id/registro_street_number"
+                android:layout_centerHorizontal="true"
+                android:hint="Altura*">
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear_address"
+            android:layout_alignLeft="@+id/registro_phone"
+            android:id="@+id/linear_address_optionals"
+            android:layout_marginBottom="20dp">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:inputType="number"
+                android:ems="2"
+                android:id="@+id/registro_floor"
+                android:layout_centerHorizontal="true"
+                android:hint="Piso">
+            </EditText>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:inputType="text"
+                android:ems="5"
+                android:id="@+id/registro_apartment"
+                android:layout_centerHorizontal="true"
+                android:hint="Dpto.">
+            </EditText>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:inputType="text"
+                android:ems="8"
+                android:id="@+id/registro_address_description"
+                android:layout_centerHorizontal="true"
+                android:hint="Descripción">
+            </EditText>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear_address_optionals"
+            android:layout_alignLeft="@id/linear_address_optionals"
+            android:id="@+id/linear_password">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:inputType="textPassword"
+                android:ems="14"
+                android:id="@+id/registro_password"
+                android:hint="Contraseña*"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_ver_password_24"
+                android:id="@+id/registro_ver_password"
+                android:background="@null">
+
+            </Button>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear_password"
+            android:layout_alignLeft="@id/linear_password"
+            android:id="@+id/linear_confirm_password">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:inputType="textPassword"
+                android:ems="14"
+                android:id="@+id/registro_confirm_password"
+                android:hint="Confirmar Contraseña*" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_ver_password_24"
+                android:id="@+id/registro_ver_confirm_password"
+                android:background="@null">
+
+            </Button>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/linear_confirm_password"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/linear_confirm_password"
+            android:text="Los campos marcados con * son obligatorios"
+            android:textSize="10sp"
+            android:textStyle="italic"
+            android:id="@+id/registro_hint">
+        </TextView>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_alignEnd="@id/linear_confirm_password"
+            android:text="Registrarse"
+            android:id="@+id/registro_btn"
+            android:onClick="register"
+            android:layout_below="@+id/registro_hint" />
+
+    </RelativeLayout>
+
+</ScrollView>
+
+

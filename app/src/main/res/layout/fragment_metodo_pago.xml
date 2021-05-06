@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MetodoPagoFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/metodo_pago_titulo"
+            android:text="@string/metodo_pago_titulo"
+            android:textSize="30sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:padding="10dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/metodo_pago_monto"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:layout_below="@+id/metodo_pago_titulo">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/metodo_pago_mensaje_seleccion"
+            android:text="@string/metodo_pago_mensaje_seleccion"
+            android:textSize="18sp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_below="@+id/metodo_pago_monto"
+            android:layout_marginBottom="15dp">
+        </TextView>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_button_group"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            android:layout_below="@id/metodo_pago_mensaje_seleccion">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radiobutton_metodo_efectivo"
+                android:text="@string/metodo_pago_efectivo"
+                android:textSize="18sp">
+            </RadioButton>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radiobutton_metodo_tarjeta_guardada"
+                android:text="@string/metodo_pago_tarjeta_guardada"
+                android:textSize="18sp">
+            </RadioButton>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radiobutton_metodo_tarjeta_nueva"
+                android:text="@string/metodo_pago_tarjeta_nueva"
+                android:textSize="18sp">
+            </RadioButton>
+
+        </RadioGroup>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/boton_agregar_tarjeta"
+            android:layout_below="@id/radio_button_group"
+            android:layout_centerHorizontal="true"
+            android:drawableStart="@drawable/ic_credit_card"
+            android:text="@string/agregar_tarjeta_titulo"
+            android:textSize="18sp"
+            android:visibility="invisible">
+        </Button>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorAccent"
+            android:id="@+id/footer">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_baseline_navigate_next_24"
+                android:text="@string/continuar"
+                android:layout_alignParentEnd="true"
+                android:textSize="14sp"
+                android:id="@+id/boton_continuar">
+            </Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_arrow_back_ios_24"
+                android:text="@string/atras"
+                android:layout_alignParentLeft="true"
+                android:textSize="14sp"
+                android:id="@+id/boton_atras">
+            </Button>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

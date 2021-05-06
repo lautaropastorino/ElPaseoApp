@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DireccionEnvioFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/titulo_seleccionar_direccion"
+            android:text="@string/titulo_direccion_envio"
+            android:textSize="30sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/texto_seleccionar_direccion"
+            android:text="@string/texto_seleccionar_direccion"
+            android:textSize="18sp"
+            android:paddingStart="15dp"
+            android:layout_below="@id/titulo_seleccionar_direccion"
+            android:layout_marginBottom="20dp">
+        </TextView>
+
+        <RadioGroup
+            android:id="@+id/radio_group_direcciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:orientation="vertical"
+            android:layout_below="@+id/texto_seleccionar_direccion"
+            android:layout_marginBottom="20dp">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/boton_retiro_nodo"
+                android:text="@string/retiro_nodo"
+                android:textSize="18sp">
+            </RadioButton>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/boton_direccion_registro"
+                android:textSize="18sp">
+            </RadioButton>
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/map_conteiner"
+            android:layout_below="@id/radio_group_direcciones"
+            android:layout_above="@id/footer"
+            android:layout_marginBottom="10dp">
+            <org.osmdroid.views.MapView
+                android:id="@+id/map"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorAccent"
+            android:id="@+id/footer">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_baseline_navigate_next_24"
+                android:text="@string/continuar"
+                android:layout_alignParentEnd="true"
+                android:textSize="14sp"
+                android:id="@+id/boton_continuar">
+            </Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_arrow_back_ios_24"
+                android:text="@string/atras"
+                android:layout_alignParentStart="true"
+                android:textSize="14sp"
+                android:id="@+id/boton_atras">
+            </Button>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

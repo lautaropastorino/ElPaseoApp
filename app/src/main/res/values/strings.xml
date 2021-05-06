@@ -1,0 +1,55 @@
+<resources>
+    <!--STRINGS DE USO GENERAL-->
+    <string name="app_name">El Paseo App</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="guardar">Guardar</string>
+    <string name="cancelar">Cancelar</string>
+    <!--STRINGS PARA FRAGMENT QUIENES SOMOS-->
+    <string name="quienessomos_titulo">¿Quiénes Somos?</string>
+    <string name="quienessomos_text1">Artesanos y productores que ofrecemos calidad al precio justo. Comercialización directa al consumidor, sin intermediarios.</string>
+    <string name="quienessomos_text2">Construimos un espacio horizontal de diálogo e interacción entre los/las productores, emprendedores y recicladores de la EPSS y sus organizaciones, las instituciones del sector, y las unidades académicas, proyectos y programas de la UNLP.</string>
+    <string name="quienessomos_text3">Encontranos en <font fgcolor='#87CEEB'><u>Facebook</u></font></string>
+    <!--STRINGS PARA FRAGMENT PRODUCTORES-->
+    <string name="productores">Productores</string>
+    <string name="productores_titulo">Productores asociados a El Paseo:</string>
+    <!--STRINGS PARA FRAGMENT PREFERENCIAS-->
+    <string name="preferencias">Preferencias</string>
+    <string name="texto_tarjetas_agregadas">Tarjeta de crédito o débito agregada: </string>
+    <string name="agregar_tarjeta">Añadir</string>
+    <string name="agregar_tarjeta_titulo">Agregar tarjeta</string>
+    <string name="texto_direcciones_agregadas">Direcciones para entrega de envios: </string>
+    <!--STRINGS PARA FRAGMENT AGREGAR TARJETA-->
+    <string name="nombre">Nombre (*)</string>
+    <string name="apellido">Apellido (*)</string>
+    <string name="numero_tarjeta">Número de tarjeta (*)</string>
+    <string name="codigo_seguridad"><font size="14">Código de seguridad (*)</font></string>
+    <string name="fecha_vencimiento"><font size="12">Fecha vencimiento MM/AA (*)</font></string>
+    <string-array name="marcas">
+        <item>MASTERCARD</item>
+        <item>VISA</item>
+    </string-array>
+    <string name="campos_obligatorios">Los campos marcados con * son obligatorios</string>
+    <!--STRINGS PARA FRAGMENT AGREGAR DIRECCION-->
+    <string name="agregar_direccion_titulo">Agregar dirección de entrega</string>
+    <!--STRINGS PARA FRAGMENT SELECCIONAR METODO DE PAGO-->
+    <string name="metodo_pago_titulo">Método de pago</string>
+    <string name="metodo_pago_mensaje_seleccion">Por favor, seleccione un método de pago:</string>
+    <string name="metodo_pago_efectivo">Pago en efectivo</string>
+    <string name="metodo_pago_tarjeta_guardada">Pago con mi tarjeta guardada</string>
+    <string name="metodo_pago_tarjeta_nueva">Pago con una nueva tarjeta</string>
+    <!--STRINGS PARA FRAGMENT INICIAR SESION-->
+    <string name="no_tenes_cuenta">¿No tenés cuenta? <font fgcolor='#87CEEB'><u>Registrate</u></font></string>
+    <!--STRINGS PARA FRAGMENT DETALLE/METODO DE PAGO-->
+    <string name="monto_total">Monto total: </string>
+    <string name="continuar">Continuar</string>
+    <string name="atras">atrás</string>
+    <!--STRINGS PARA FRAGMENT SELECCIONAR DIRECCION DE ENVIO-->
+    <string name="titulo_direccion_envio">Dirección de envio</string>
+    <string name="texto_seleccionar_direccion">Por favor, seleccione una dirección de envio: </string>
+    <string name="retiro_nodo">Retiro en nodo</string>
+    <string name="direccion_registro">Enviar a mi dirección de registro</string>
+    <!--STRINGS PARA FRAGMENT CONFIRMAR COMPRA-->
+    <string name="resumen_titulo">Resumen de la compra</string>
+    <string name="confirmar_compra">Confirmar</string>
+</resources>

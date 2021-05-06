@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_24"
+            android:title="Inicio"/>
+        <item
+            android:id="@+id/nav_nueva_compra"
+            android:icon="@drawable/ic_baseline_add_shopping_cart_24"
+            android:title="Nueva Compra">
+
+        </item>
+        <item
+            android:id="@+id/nav_quienes_somos"
+            android:icon="@drawable/ic_quienes_somos"
+            android:title="@string/quienessomos_titulo" />
+        <item
+            android:id="@+id/nav_productores"
+            android:icon="@drawable/ic_productores"
+            android:title="@string/productores" />
+        <item
+            android:id="@+id/nav_preferencias"
+            android:icon="@drawable/ic_perfil"
+            android:title="@string/preferencias" />
+        <item
+            android:id="@+id/nav_log_out"
+            android:icon="@drawable/ic_logout_24"
+            android:title="Cerrar Sesión" />
+    </group>
+</menu>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contenedor_productos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/titulo_categorias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginBottom="15sp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="left"
+            android:text="Productos Disponibles:"
+            android:textSize="35sp" />
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/scroll_categorias"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/footer"
+            android:layout_below="@+id/titulo_categorias"
+            android:paddingLeft="15sp">
+
+
+            <LinearLayout
+                android:id="@+id/linear_categorias"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingRight="15sp">
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <RelativeLayout
+
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorAccent">
+
+            <TextView
+                android:id="@+id/precioTotalCarro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/boton_borrar_seleccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/precioTotalCarro"
+                android:text="Borrar selección"
+                android:textSize="10dp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/boton_realizar_compra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/boton_borrar_seleccion"
+                android:text="Realizar Compra"
+                android:textSize="10dp">
+
+            </Button>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

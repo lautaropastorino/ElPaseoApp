@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgregarDireccionFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/agregar_direccion_titulo"
+            android:textSize="25sp"
+            android:id="@+id/direccion_titulo">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/direccion_titulo"
+            android:layout_alignStart="@+id/direccion_titulo"
+            android:id="@+id/linear_address">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/registro_street"
+                android:hint="Calle*">
+            </EditText>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:inputType="number"
+                android:ems="5"
+                android:id="@+id/registro_street_number"
+                android:hint="Altura*">
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear_address"
+            android:layout_alignStart="@+id/linear_address"
+            android:id="@+id/linear_address_optionals"
+            android:layout_marginBottom="12dp">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:inputType="number"
+                android:ems="2"
+                android:id="@+id/registro_floor"
+                android:hint="Piso">
+            </EditText>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:inputType="text"
+                android:ems="5"
+                android:id="@+id/registro_apartment"
+                android:hint="Dpto.">
+            </EditText>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:inputType="text"
+                android:ems="8"
+                android:id="@+id/registro_address_description"
+                android:hint="Descripción">
+            </EditText>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/linear_address_optionals"
+            android:layout_alignStart="@+id/linear_address_optionals"
+            android:text="@string/campos_obligatorios"
+            android:textStyle="italic"
+            android:id="@+id/registro_hint">
+        </TextView>
+
+        <Button
+            android:id="@+id/boton_guardar_direccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/guardar"
+            android:layout_below="@+id/registro_hint"
+            android:layout_alignRight="@+id/direccion_titulo">
+        </Button>
+
+        <Button
+            android:id="@+id/boton_cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancelar"
+            android:layout_below="@+id/registro_hint"
+            android:layout_alignStart="@+id/linear_address_optionals"
+            android:layout_centerInParent="true">
+        </Button>
+
+    </RelativeLayout>
+</FrameLayout>

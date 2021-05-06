@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Iniciar Sesión"
+        android:textSize="40sp"
+        android:id="@+id/login_titulo">
+
+    </TextView>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:inputType="textEmailAddress"
+        android:ems="15"
+        android:id="@+id/login_mail"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/login_titulo"
+        android:hint="Email" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_mail"
+        android:layout_alignLeft="@id/login_mail"
+        android:id="@+id/linear_password">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:inputType="textPassword"
+            android:ems="14"
+            android:id="@+id/login_password"
+            android:hint="Contraseña"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_ver_password_24"
+            android:id="@+id/login_ver_password"
+            android:background="@null">
+
+        </Button>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Iniciar Sesión"
+        android:id="@+id/login_btn"
+        android:layout_below="@+id/linear_password" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_btn"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/login_registrate"
+        android:text="@string/no_tenes_cuenta">
+
+    </TextView>
+
+
+
+</RelativeLayout>

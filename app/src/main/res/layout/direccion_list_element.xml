@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/linear_direcciones">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="15dp">
+
+        <TextView
+            android:id="@+id/datos_direccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_alignBaseline="@id/linear_botones"
+            android:textSize="18sp"
+            android:paddingTop="12dp">
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/linear_botones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentEnd="true">
+
+            <Button
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/boton_editar_direccion"
+                android:drawableStart="@drawable/ic_edit">
+            </Button>
+
+            <Button
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/boton_eliminar_direccion"
+                android:drawableStart="@drawable/ic_cancel">
+            </Button>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

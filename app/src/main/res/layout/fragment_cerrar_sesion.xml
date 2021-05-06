@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CerrarSesionFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/cerrar_sesion_titulo"
+        android:textSize="40sp"
+        android:text="¿Cerrar sesión?"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:layout_below="@id/cerrar_sesion_titulo"
+        android:id="@+id/cerrar_sesion_bajada"
+        android:text="Deberá ingresar sus datos nuevamente para acceder a su cuenta.">
+    </TextView>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cerrar_sesion_titulo"
+        android:id="@+id/cerrar_sesion_si"
+        android:layout_below="@+id/cerrar_sesion_bajada"
+        android:text="Si">
+    </Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:id="@+id/cerrar_sesion_no"
+        android:layout_alignRight="@+id/cerrar_sesion_titulo"
+        android:layout_below="@+id/cerrar_sesion_bajada"
+        android:text="No">
+    </Button>
+
+</RelativeLayout>

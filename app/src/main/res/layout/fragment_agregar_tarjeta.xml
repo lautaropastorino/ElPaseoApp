@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    tools:context=".AgregarTarjetaFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="@string/agregar_tarjeta_titulo"
+        android:textSize="40sp"
+        android:id="@+id/agregar_tarjeta_titulo">
+    </TextView>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:inputType="textCapWords"
+        android:ems="16"
+        android:id="@+id/agregar_tarjeta_nombre"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/agregar_tarjeta_titulo"
+        android:hint="@string/nombre" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:inputType="textCapWords"
+        android:ems="16"
+        android:id="@+id/agregar_tarjeta_apellido"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/agregar_tarjeta_nombre"
+        android:hint="@string/apellido" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:digits="01234 56789"
+        android:inputType="number"
+        android:maxLength="19"
+        android:ems="16"
+        android:id="@+id/agregar_tarjeta_numero"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/agregar_tarjeta_apellido"
+        android:hint="@string/numero_tarjeta">
+    </EditText>
+
+    <Spinner
+        android:id="@+id/agregar_tarjeta_marcas_spinner"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/agregar_tarjeta_numero"
+        android:layout_alignLeft="@id/agregar_tarjeta_numero"
+        android:layout_gravity="left"
+        style="@android:style/Widget.DropDownItem.Spinner"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/agregar_tarjeta_marcas_spinner"
+        android:layout_alignLeft="@id/agregar_tarjeta_marcas_spinner"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/linear_row">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:inputType="date"
+            android:maxLength="5"
+            android:ems="8"
+            android:id="@+id/agregar_tarjeta_fecha_venc"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/fecha_vencimiento">
+        </EditText>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:inputType="number"
+            android:maxLength="3"
+            android:ems="8"
+            android:id="@+id/agregar_tarjeta_codigo"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/codigo_seguridad">
+        </EditText>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/agregar_tarjeta_campos_obligatorios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/campos_obligatorios"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        android:layout_below="@id/linear_row"
+        android:layout_alignLeft="@id/linear_row"
+        android:layout_marginBottom="25dp">
+    </TextView>
+
+    <Button
+        android:id="@+id/guardar_tarjeta_atras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/agregar_tarjeta_campos_obligatorios"
+        android:layout_alignParentStart="true"
+        android:text="@string/atras">
+    </Button>
+
+    <Button
+        android:id="@+id/guardar_tarjeta_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/agregar_tarjeta_campos_obligatorios"
+        android:layout_alignParentEnd="true"
+        android:text="@string/guardar" />
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/titulo_seleccionar_cantidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textStyle="bold">
+
+    </TextView>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="30dp"
+    android:paddingHorizontal="40dp">
+
+        <NumberPicker
+            android:id="@+id/number_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+        </NumberPicker>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/number_picker">
+            <Button
+                android:id="@+id/boton_cancel"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_cancel"
+                >
+
+            </Button>
+
+            <Button
+                android:id="@+id/boton_restart"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/number_picker"
+                android:layout_toRightOf="@id/boton_cancel"
+                android:drawableStart="@drawable/ic_boton_restart">
+
+            </Button>
+
+            <Button
+                android:id="@+id/boton_accept"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/number_picker"
+                android:layout_toRightOf="@id/boton_restart"
+                android:drawableStart="@drawable/ic_accept">
+
+            </Button>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
