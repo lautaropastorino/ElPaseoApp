@@ -3,11 +3,9 @@ Aplicación Android encargada del proceso de compra para la comercializadora el 
 
 ###### Desarrollada en el marco de la materia Laboratorio de Software 2020, Facultad de Informática, UNLP
 
-Pantalla principal
-![Pantalla principal](https://raw.githubusercontent.com/lautaropastorino/ElPaseoApp/main/screenshots/pantalla_principal.jpeg)
-
-Lista de productos
-![Lista de productos](https://raw.githubusercontent.com/lautaropastorino/ElPaseoApp/main/screenshots/listado_productos.jpeg)
-
-Menú lateral desplegable
-![Menú lateral desplegable](https://raw.githubusercontent.com/lautaropastorino/ElPaseoApp/main/screenshots/menu_desplegable.jpeg)
+### Screenshots
+<div>
+  <img src="https://raw.githubusercontent.com/lautaropastorino/ElPaseoApp/main/screenshots/pantalla_principal.jpeg" width="200" alt="Pantalla principal"> 
+  <img src="https://raw.githubusercontent.com/lautaropastorino/ElPaseoApp/main/screenshots/listado_productos.jpeg" width="200" alt="Lista de productos">
+  <img src="https://raw.githubusercontent.com/lautaropastorino/ElPaseoApp/main/screenshots/menu_desplegable.jpeg" width="200" alt="Menú lateral desplegable">
+</div>
